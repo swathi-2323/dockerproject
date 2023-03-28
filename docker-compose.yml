@@ -5,14 +5,14 @@ services:
     image: swathi2321/phonepaymovies:v1
     ports:
       - 8000:80
-    replicas: 3
+    replicas: 4
   train:
     image: swathi2321/phonepaytrain:v1
     ports:
       - 8001:80
-  replicas: 3
+  replicas: 4
   recharge:
     image: swathi2321/phonerecharge:v1
     ports:
       - 8002:80
-    replicas: 3
+    replicas: 4

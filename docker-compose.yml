@@ -1,20 +1,18 @@
-version: '3'
+---
+version: "3"
 services:
-   movie:
-     image: swathi2321/phonepaymovies:v1
-     ports:
-       - "8000:80"
-     replicas: 3
-
-   train:
-     image: swathi2321/ponepaytrain:v1
-       ports:
-        - "8001:80"
-       replicas: 3
-    
-    recharge:
-       image: swathi2321/phonerecharge:v1
-       ports:
-        - "8002:80" 
-       replicas: 3
-       
+  movie:
+    image: swathi2321/phonepaymovies:v1
+    ports:
+      - 8000:80
+    replicas: 3
+  train:
+    image: swathi2321/phonepaytrain:v1
+    ports:
+      - 8001:80
+  replicas: 3
+  recharge:
+    image: swathi2321/phonerecharge:v1
+    ports:
+      - 8002:80
+    replicas: 3
